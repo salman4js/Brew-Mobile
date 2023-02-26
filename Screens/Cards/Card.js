@@ -27,7 +27,10 @@ const Panel = (props) => {
                 </Text>
             </View>
             <View style = {styles.buttonHolder}>
-                <TouchableOpacity disabled = {props.engaged === "true" ? false : true} style = {props.engaged === "true" ? styles.buttonSuccess : styles.buttonSecondary}>
+                <TouchableOpacity disabled = {props.engaged === "true" ? false : true} 
+                style = {props.engaged === "true" ? styles.buttonSuccess : styles.buttonSecondary}
+                onPress = {() => props.showDetails(props.roomid)}
+                >
                     <Text style = {styles.buttonIn}>
                         Check Details
                     </Text>

@@ -80,6 +80,10 @@ const Login = ({ navigation }) => {
             id: "OK"
           }
         }
+    },
+    userdata: {
+      isRequired: false,
+      content: false
     }
   }
 

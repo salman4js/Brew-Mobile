@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     modalView: {
@@ -17,6 +17,12 @@ const styles = StyleSheet.create({
     modalText: {
         color: 'white',
         fontSize: 14
+    },
+    textMainContainer:{
+        alignItems: 'center',
+        fontWeight: 'bold',
+        fontSize: 19,
+        paddingLeft: Dimensions.get('window').width / 4.2
     }
 })
 

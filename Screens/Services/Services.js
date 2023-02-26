@@ -1,5 +1,5 @@
 import axios from "axios";
-var url = 'http://6cd2-2405-204-5707-7694-def5-7be1-b388-663d.ngrok.io'
+var url = 'http://ffdd-2405-204-5707-7694-e813-5e7-78fc-2bf8.ngrok.io'
 
 export async function processLogin(data){
     const result = await axios.post(`${url}/loginlodge`, data);
@@ -12,5 +12,10 @@ export async function allRooms(data){
             "x-access-token" : data.token
         }
     });
+    return result.data;
+}
+
+export async function getUserData(data, id){
+    const result = await axios.post(`${url}/${id}/userroom`, data);
     return result.data;
 }
