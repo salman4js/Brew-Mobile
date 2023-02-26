@@ -39,6 +39,16 @@ const TextBox = (props) => {
             <Text style = {styles.textContainer}>
                 Discount: {props.discount}
             </Text>
+            {props.bill && (
+                <Text style = {styles.textContainer}>
+                    Amount Paid: {props.bill}
+                </Text>
+            )}
+            {props.dishBill && (
+                <Text style = {styles.textContainer}>
+                    Dish Bill : {props.dishBill}
+                </Text>
+            )}
         </View>
     )
 }

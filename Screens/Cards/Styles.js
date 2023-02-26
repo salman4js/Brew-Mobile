@@ -5,15 +5,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#808080'
     },
     textContainer: {
-        marginBottom: 10
+        marginBottom: 10,
+        fontSize: 15
     },
     textContainerSuccess: {
         marginBottom: 10,
-        color: 'green'
+        color: 'green',
+        fontSize: 18,
+        fontWeight: 'bold'
     },
     textContainerSecondary: {
         marginBottom: 10,
-        color: 'red'
+        color: 'red',
+        fontSize: 18,
+        fontWeight: 'bold'
     },
     buttonIn:{
         color: "white",
@@ -26,6 +31,7 @@ const styles = StyleSheet.create({
     buttonHolder: {
         paddingLeft : 65,
         paddingRight : 100,
+        marginTop: 10,
         marginBottom : 5,
     },
     buttonSuccess: {
@@ -38,7 +44,7 @@ const styles = StyleSheet.create({
         borderColor : '#2C3A47',
         borderRadius : 4,
         borderWidth : 2,
-        marginBottom : 10 
+        marginBottom : 5 
     },
     buttonSecondary: {
         width : '120%',
@@ -50,7 +56,7 @@ const styles = StyleSheet.create({
         borderColor : '#2C3A47',
         borderRadius : 4,
         borderWidth : 2,
-        marginBottom : 10 
+        marginBottom : 5
     },
 })
 

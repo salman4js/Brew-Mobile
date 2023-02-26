@@ -97,6 +97,21 @@ const Home = (props) => {
         }
     }
 
+    // Panel Config
+    const panelConfig = {
+        dashboard: true,
+        history: false,
+        button: {
+            isRequired: true,
+            id: "Check Details",
+            isPrimary: false,
+        },
+        buttonFunction: {
+            isRequired: false,
+            id: "Details"
+        }
+    }
+
 
     // Constructor!
     useEffect(() => {
@@ -105,7 +120,7 @@ const Home = (props) => {
     }, [])
 
     return (
-        <View>
+        <View style = {{backgroundColor: 'rgb(9,14,44)', flex: 1}}>
             <Count available={available} total={total} booked={total - available} />
             {
                 modal ? (
@@ -118,7 +133,7 @@ const Home = (props) => {
                             ) : (
                                 data.map((item, key) => {
                                     return (
-                                        <Panel title={item.roomno} engaged={item.isOccupied} roomtype={item.suiteName} bedcount={item.bedCount}
+                                        <Panel panelConfig = {panelConfig} title={item.roomno} engaged={item.isOccupied} roomtype={item.suiteName} bedcount={item.bedCount}
                                             roomid={item._id} id={props.token} lodgeid={props.userid} price={item.price}
                                             prebook={item.preBooked} prevalid={item.preValid} discount={item.discount} showDetails={(id) => showDetails(id)} />
                                     )

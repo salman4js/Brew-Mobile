@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     cardView: {
-        marginBottom: 70
+        marginBottom: 20
     }
 })
 
