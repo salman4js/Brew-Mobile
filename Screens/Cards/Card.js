@@ -42,7 +42,7 @@ const Panel = (props) => {
                 secondPhoneNumber: props.secphone,
                 adults: props.adults,
                 childrens: props.childrens,
-                aadharCard: props.aadharCard,
+                aadharCard: props.aadharcard,
                 stayedDays: props.stayeddays,
                 prebooked: props.prebooked,
                 advance: props.advance,

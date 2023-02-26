@@ -1,5 +1,5 @@
 import axios from "axios";
-var url = 'http://9df3-2405-204-5707-7694-e813-5e7-78fc-2bf8.ngrok.io'
+var url = 'http://7b0c-2405-204-5707-7694-e813-5e7-78fc-2bf8.ngrok.io'
 
 export async function processLogin(data){
     const result = await axios.post(`${url}/loginlodge`, data);
