@@ -5,6 +5,7 @@ import { Icon } from 'react-native-elements';
 
 // Import sub component!
 import Home from '../Home/Home';
+import History from '../History/History';
 
 
 const Tab = createBottomTabNavigator();
@@ -18,9 +19,7 @@ const Footer = ({ route, navigation }) => {
     }
     function TabB() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>Tab B</Text>
-            </View>
+            <History userid = {userid} token = {token} />
         );
     }
     function TabC() {
@@ -44,7 +43,7 @@ const Footer = ({ route, navigation }) => {
                     // activeTintColor: '#ff4757',
                     // inactiveTintColor: '#ff6b81',
                     // Default Background Color is white you can change it by following props
-                    // activeBackgroundColor: '#ced6e0',
+                     activeBackgroundColor: '#ced6e0',
                     // inactiveBackgroundColor: '#ced6e0',
                 }
             }
@@ -59,7 +58,7 @@ const Footer = ({ route, navigation }) => {
                 }}
             />
             <Tab.Screen
-                name='Tab B'
+                name='History'
                 component={TabB}
                 options={{
                     tabBarIcon: ({ color, size }) => (

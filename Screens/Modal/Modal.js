@@ -23,7 +23,7 @@ const Modal = (props) => {
                                 {props.config.message.message}
                             </Text>
                         )}
-                        {props.config.userdata.content && (
+                        {props.config.userdata && props.config.userdata.content && (
                             props.config.userdata.content.map((item, key) => {
                                 return (
                                     <View>
@@ -37,11 +37,28 @@ const Modal = (props) => {
                                         />
                                         <TextBox name={item.username} phoneNumber={item.phonenumber} secondPhoneNumber={item.secondphonenumber}
                                             dateofcheckin={item.dateofcheckin} aadharcard={item.aadharcard} childrens={item.childrens}
-                                            dateofcheckout = {item.dateofcheckout} adults={item.adults} discount={item.discount} advance={item.advance}
+                                            dateofcheckout={item.dateofcheckout} adults={item.adults} discount={item.discount} advance={item.advance}
                                         />
                                     </View>
                                 )
                             })
+                        )}
+                        {props.config.userdb && props.config.userdb.content && (
+                            <View>
+                                <Text style={styles.textMainContainer}> Customer Details </Text>
+                                <View
+                                    style={{
+                                        borderBottomColor: 'black',
+                                        borderBottomWidth: StyleSheet.hairlineWidth,
+                                        marginBottom: 10
+                                    }}
+                                />
+                                <TextBox name={props.config.userdb.content.username} phoneNumber={props.config.userdb.content.phoneNumber} secondPhoneNumber={props.config.userdb.content.secondPhoneNumber}
+                                    dateofcheckin={props.config.userdb.content.checkin} aadharcard={props.config.userdb.content.aadharCard} childrens={props.config.userdb.content.childrens}
+                                    dateofcheckout={props.config.userdb.content.checkout} adults={props.config.userdb.content.adults} discount={props.config.userdb.content.discount} advance={props.config.userdb.content.advance}
+                                    bill = {props.config.userdb.content.bill} dishBill = {props.config.userdb.content.dishBill}
+                                />
+                            </View>
                         )}
                         {
                             props.config.options.buttons.isRequired && (
