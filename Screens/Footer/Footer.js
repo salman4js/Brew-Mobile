@@ -6,6 +6,7 @@ import { Icon } from 'react-native-elements';
 // Import sub component!
 import Home from '../Home/Home';
 import History from '../History/History';
+import User from '../Profile/User';
 
 
 const Tab = createBottomTabNavigator();
@@ -24,9 +25,7 @@ const Footer = ({ route, navigation }) => {
     }
     function TabC() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>Tab C</Text>
-            </View>
+            <User userid = {userid} token = {token} />
         );
     }
 
@@ -67,7 +66,7 @@ const Footer = ({ route, navigation }) => {
                 }}
             />
             <Tab.Screen
-                name='Tab C'
+                name='Profile'
                 component={TabC}
                 options={{
                     tabBarIcon: ({ color, size }) => (
