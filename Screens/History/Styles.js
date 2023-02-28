@@ -19,7 +19,7 @@ const style = StyleSheet.create({
         marginBottom: 10
     },
     loader: {
-        paddingTop: Dimensions.get('window').height / 6,
+        paddingTop: Dimensions.get('window').height / 4,
         alignItems: 'center',
         marginBottom: 40
     },
