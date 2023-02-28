@@ -121,7 +121,7 @@ const Home = (props) => {
 
     return (
         <View style = {{backgroundColor: 'rgb(9,14,44)', flex: 1}}>
-            <Count available={available} total={total} booked={total - available} />
+            <Count count = {true} available={available} total={total} booked={total - available} />
             {
                 modal ? (
                     <Modal config={modalConfig} handleModal={() => handleModal()} />

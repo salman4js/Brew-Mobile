@@ -7,9 +7,15 @@ import styles from './Styles';
 const Count = (props) => {
     return(
         <View style = {styles.container}>
-            <Text style = {styles.textContainer}>
+            {props.count ? (
+              <Text style = {styles.textContainer}>
                 Total Rooms: {props.total}, Booked Rooms: {props.booked}, Available: {props.available}
-            </Text>
+              </Text>
+            ) : (
+              <Text style = {styles.textUserContainer}>
+                Total Amount : {props.rate}
+              </Text>
+            )}
         </View>
     )
 }

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 const style = StyleSheet.create({
     headlineContainer: {
@@ -43,6 +43,18 @@ const style = StyleSheet.create({
         borderWidth : 2,
         marginBottom : 5 
     },
+    noPreview: {
+      marginTop: 200
+    },
+    noPreviewText:{
+      paddingLeft: Dimensions.get('window').width / 7,
+      color: "white",
+      fontWeight: 'bold',
+      fontSize: 15
+    },
+    totalRate: {
+      backgroundColor: 'white'
+    }
 })
 
 export default style;

@@ -66,7 +66,7 @@ const Footer = ({ route, navigation }) => {
                 }}
             />
             <Tab.Screen
-                name='Profile'
+                name='Billings'
                 component={TabC}
                 options={{
                     tabBarIcon: ({ color, size }) => (
