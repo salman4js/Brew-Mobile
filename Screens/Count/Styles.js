@@ -16,6 +16,18 @@ const styles = StyleSheet.create({
         paddingTop: 5,
         paddingBottom: 5,
         fontWeight: 'bold'
+    },
+    textUserContainer: {
+        backgroundColor: 'white',
+        alignItems: 'center',
+        marginTop: 15,
+        borderRadius: 5,
+        paddingLeft: Dimensions.get('window').width / 3.5 ,
+        paddingRight: 4,
+        paddingTop: 5,
+        paddingBottom: 5,
+        fontWeight: 'bold',
+        fontSize: 16
     }
 })
 

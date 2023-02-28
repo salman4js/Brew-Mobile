@@ -67,7 +67,7 @@ const Panel = (props) => {
                     {props.panelConfig.dashboard && (
                         <View>
                             <Text style={props.engaged === "true" ? styles.textContainerSuccess : styles.textContainerSecondary}>
-                                Engaged: {props.engaged}
+                                ENGAGED: {props.engaged.toUpperCase()}
                             </Text>
                             <Text style={styles.textContainer}>
                                 Room Type: {props.roomtype}
