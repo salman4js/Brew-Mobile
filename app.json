@@ -4,12 +4,12 @@
     "slug": "brew-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/task.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/business-idea.png",
+      "resizeMode": "center",
+      "backgroundColor": "white"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,11 +20,16 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "rgb(9,14,44)"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d03faa9b-ddc5-47a7-b667-783927a0d896"
+      }
     }
   }
 }
