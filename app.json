@@ -8,8 +8,8 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/business-idea.png",
-      "resizeMode": "center",
-      "backgroundColor": "white"
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,8 +20,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "rgb(9,14,44)"
-      }
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.azeemstark.brewmobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
